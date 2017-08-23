@@ -1,0 +1,60 @@
+<!-- ALLOWOVERWRITE-BD22CB3A8C4E9B360A84450155FAA225 -->
+
+
+
+        <md-tab-group >
+        <md-tab label="Main">
+        	 <form [formGroup]="taskForm" class="form-horizontal css-form" role="form" (ngSubmit)="update()">
+	    	            
+	    				<md-input-container style="width: 100%">
+                            <label for="taskCompletedDate" class="col-sm-2 control-label">CompletedDate</label>
+                            
+                                <input mdInput formControlName="completedDate" id="taskCompletedDate" type="date" class="form-control" required/>
+                            
+                        </md-input-container>
+                        
+	    	            
+	    				<md-input-container style="width: 100%">
+                            <label for="taskDueDate" class="col-sm-2 control-label">DueDate</label>
+                            
+                                <input mdInput formControlName="dueDate" id="taskDueDate" type="date" class="form-control" required/>
+                            
+                        </md-input-container>
+                        
+	    	            
+	    				<md-input-container style="width: 100%">
+                            <label for="taskName" class="col-sm-2 control-label">Name</label>
+                            
+                                <input mdInput formControlName="name" id="taskName" type="text" class="form-control" required/>
+                            
+                        </md-input-container>
+                        
+	    	            
+	    				<md-input-container style="width: 100%">
+                            <label for="taskStartedDate" class="col-sm-2 control-label">StartedDate</label>
+                            
+                                <input mdInput formControlName="startedDate" id="taskStartedDate" type="date" class="form-control" required/>
+                            
+                        </md-input-container>
+                        
+	    	            
+	    				<md-input-container style="width: 100%">
+                            <label for="taskStatus" class="col-sm-2 control-label">Status</label>
+                            
+                                <input mdInput formControlName="status" id="taskStatus" type="number" class="form-control" required/>
+                            
+                        </md-input-container>
+                        
+        	 	 	 	<div class="form-group">
+	              	 		<div class="col-sm-2"></div>
+                  	  		<div class="col-sm-10">
+                        		<button md-raised-button color="primary" ng-click="save()">Save</button>
+                   	 		</div>
+	            	 	</div>
+        	 </form>
+        	 </md-tab>
+    	
+        	 
+        	 
+        	 </md-tab-group>
+  

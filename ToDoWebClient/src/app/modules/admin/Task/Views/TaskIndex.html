@@ -1,0 +1,44 @@
+<!-- ALLOWOVERWRITE-721F9993ED9D4805F28E4D20E3070E4D -->
+
+<div class="app-datatable">
+<ngx-datatable
+  class='material'
+  [rows]='rows'
+  [columnMode]="'force'"
+  [headerHeight]="50"
+  [footerHeight]="50"
+  [rowHeight]="40"
+  [scrollbarV]="true"
+  [limit]="10"
+  (page)="onPage($event)" style="width: 100%; height: 100%; position: relative" >
+  <ngx-datatable-column name="CompletedDate" width="300"></ngx-datatable-column> 
+  <ngx-datatable-column name="DueDate" width="300"></ngx-datatable-column> 
+  <ngx-datatable-column name="Name" width="300"></ngx-datatable-column> 
+  <ngx-datatable-column name="StartedDate" width="300"></ngx-datatable-column> 
+  <ngx-datatable-column name="Status" width="300"></ngx-datatable-column> 
+  <ngx-datatable-column name="TaskId" width="300"></ngx-datatable-column> 
+  
+  <ngx-datatable-column name="Edit" width="300" prop="taskId">
+      <ng-template let-value="value" ngx-datatable-cell-template>
+      <button md-icon-button	routerLink="/admin/user/edit/{{value}}" color="primary"><md-icon>edit</md-icon></button>
+
+    </ng-template>
+    </ngx-datatable-column>
+    <ngx-datatable-column name="Delete" width="300" prop="taskId">
+      <ng-template let-value="value" ngx-datatable-cell-template>
+        <button md-icon-button	(click)="delete(value)" color="warn"><md-icon>delete</md-icon></button>
+
+      </ng-template>
+    </ngx-datatable-column>
+  
+  
+</ngx-datatable>
+
+<a md-raised-button color="primary" href="/admin/task/add">Add Task</a>
+
+</div>
+
+
+
+
+

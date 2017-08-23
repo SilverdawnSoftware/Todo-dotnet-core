@@ -1,0 +1,40 @@
+
+
+<md-sidenav-container class="demo-root" fullscreen>
+  <md-sidenav #start>
+    <md-nav-list>
+      <a *ngFor="let navItem of navItems"
+         md-list-item
+         (click)="start.close()"
+         [routerLink]="[navItem.route]">
+        {{navItem.name}}
+      </a>
+
+      <hr>
+
+      <a md-list-item
+         (click)="start.close()"
+         [routerLink]="['baseline']">
+        Baseline
+      </a>
+    </md-nav-list>
+    <button md-button (click)="start.close()">CLOSE</button>
+  </md-sidenav>
+
+    <md-toolbar color="primary">
+      <button md-icon-button (click)="start.open()"><md-icon class="md-24">menu</md-icon></button>
+
+      <div class="demo-toolbar" style="padding-left: 20px">
+        <h1 style="color: white">Licensing Admin</h1>
+        <div>
+
+        </div>
+      </div>
+    </md-toolbar>
+      <div #root="$implicit" dir="ltr" class="demo-content">
+        <router-outlet></router-outlet>
+      </div>
+
+
+</md-sidenav-container>
+
