@@ -14,27 +14,27 @@ namespace ToDo.Transactions.Model
 	    		 /// <summary>
                   /// 
                   /// </summary>	    		
-	    		public DateTime CompletedDate  { get; set; } =new DateTime();
+	    		public DateTime CompletedDate  { get; set; } 
 	    		
 	    		 /// <summary>
                   /// 
                   /// </summary>	    		
-	    		public DateTime DueDate  { get; set; } = new DateTime();
-
-        /// <summary>
-        /// 
-        /// </summary>	    		
-        public string Name  { get; set; } 
+	    		public DateTime DueDate  { get; set; } 
 	    		
 	    		 /// <summary>
                   /// 
                   /// </summary>	    		
-	    		public DateTime StartedDate  { get; set; } = new DateTime();
-
-        /// <summary>
-        /// 
-        /// </summary>	    		
-        public int Status  { get; set; }
+	    		public string Name  { get; set; } 
+	    		
+	    		 /// <summary>
+                  /// 
+                  /// </summary>	    		
+	    		public DateTime StartedDate  { get; set; } 
+	    		
+	    		 /// <summary>
+                  /// 
+                  /// </summary>	    		
+	    		public int Status  { get; set; } 
 	    		
 	    		 /// <summary>
                   /// 

@@ -23,7 +23,7 @@
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       },
-      "applicationUrl": "http://localhost:54501"
+      "applicationUrl": "http://test.silvadawn.co.uk:54501"
     }
   }
 }

@@ -1,4 +1,4 @@
-// ALLOWOVERWRITE-4597AEDB48E3F357E31E2108F3148324
+// ALLOWOVERWRITE-631EB07D807BA620EFED11E357C81DC2
 
 
 
@@ -22,7 +22,7 @@ export class UserService {
 
 
 
-  baseURL: string='http://localhost:54500';
+  baseURL: string='';
 
   getAll(): Promise<UserView[]> {
     return this.http.get(this.baseURL + `/api/User/All`)

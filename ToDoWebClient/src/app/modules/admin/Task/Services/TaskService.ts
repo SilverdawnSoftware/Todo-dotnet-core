@@ -1,4 +1,4 @@
-// ALLOWOVERWRITE-070A1428F3411F8CB4544B89DCD622ED
+// ALLOWOVERWRITE-A81A285745D7BE875CD2B10B80C83115
 
 
 
@@ -22,7 +22,7 @@ export class TaskService {
 
 
 
-  baseURL: string='http://localhost:54500';
+  baseURL: string='';
 
   getAll(): Promise<TaskView[]> {
     return this.http.get(this.baseURL + `/api/Task/All`)

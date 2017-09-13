@@ -1,4 +1,4 @@
-// ALLOWOVERWRITE
+// ALLOWOVERWRITE-7CD8602A74BD0E43680F55ED164E86E6
 
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 import { NgModule } from '@angular/core';
@@ -26,12 +26,12 @@ import {TaskEdit} from './modules/admin/Task/Views/TaskEdit';
 
 
 @NgModule({
-  imports: [BrowserModule, ReactiveFormsModule, BrowserAnimationsModule, MaterialModule, MdNativeDateModule, MdTabsModule, HttpModule,NgxDatatableModule, AdminRoutingModule],
-  declarations: [AppShell
+  imports: [BrowserModule, ReactiveFormsModule, BrowserAnimationsModule, MaterialModule, MdNativeDateModule, MdTabsModule,NgxDatatableModule, HttpModule, AdminRoutingModule],
+  declarations: [AppShell 
   ,UserEdit,UserIndex
   ,TaskEdit,TaskIndex
-
-
+  
+  
   ],
   bootstrap: [AppShell]
 })
