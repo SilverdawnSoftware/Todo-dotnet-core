@@ -1,4 +1,4 @@
-// ALLOWOVERWRITE-56F15F55B55E25FF63E7781325B0180B
+// ALLOWOVERWRITE-8B3AA628994D8E5C126BE0BAC2BE0DD6
 
 using System;
 using System.Collections.Generic;
@@ -13,7 +13,7 @@ namespace ToDo.Transactions.Model
     	
     	
     	/// <summary>
-        /// 
+        /// Unique identifier for user
         /// </summary>	 
     	public int  UserId  { get; set; } 
     	

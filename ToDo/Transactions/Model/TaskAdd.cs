@@ -1,4 +1,4 @@
-// ALLOWOVERWRITE-C59D1C66199B289AFD5AEC48D06134C2
+// ALLOWOVERWRITE-F9F69E9BB4A8F0722BD3281198CB0775
 
 using System;
 using System.Collections.Generic;
@@ -12,32 +12,32 @@ namespace ToDo.Transactions.Model
     {
 	    		
 	    		 /// <summary>
-                  /// 
+                  /// The data the task was completed
                   /// </summary>	    		
 	    		public DateTime CompletedDate  { get; set; } 
 	    		
 	    		 /// <summary>
-                  /// 
+                  /// When the task needs to be completed by
                   /// </summary>	    		
 	    		public DateTime DueDate  { get; set; } 
 	    		
 	    		 /// <summary>
-                  /// 
+                  /// The name of the task to be done
                   /// </summary>	    		
 	    		public string Name  { get; set; } 
 	    		
 	    		 /// <summary>
-                  /// 
+                  /// When the task was started
                   /// </summary>	    		
 	    		public DateTime StartedDate  { get; set; } 
 	    		
 	    		 /// <summary>
-                  /// 
+                  /// The status of the task e.g, Inprogress, Completed
                   /// </summary>	    		
 	    		public int Status  { get; set; } 
 	    		
 	    		 /// <summary>
-                  /// 
+                  /// Unique identifier for a task
                   /// </summary>	    		
 	    		public int TaskId  { get; set; } 
     	   	

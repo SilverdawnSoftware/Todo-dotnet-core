@@ -1,4 +1,4 @@
-// ALLOWOVERWRITE-A81A285745D7BE875CD2B10B80C83115
+// ALLOWOVERWRITE-338E84BA47D65916E5C381DDD9CC815F
 
 
 
@@ -22,7 +22,7 @@ export class TaskService {
 
 
 
-  baseURL: string='';
+  baseURL: string='http://test.silvadawn.co.uk:54501';
 
   getAll(): Promise<TaskView[]> {
     return this.http.get(this.baseURL + `/api/Task/All`)

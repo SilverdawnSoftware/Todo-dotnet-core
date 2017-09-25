@@ -1,4 +1,4 @@
-// ALLOWOVERWRITE-F90ED823CCF9DD0A462D79DEEAD53F06
+// ALLOWOVERWRITE-32091EDE62D983DB4BF5355B815946EE
 
 using System;
 using System.Collections.Generic;
@@ -17,37 +17,37 @@ namespace ToDo.Views.Model
 	    	
 	    	
 	    	/// <summary>
-            /// 
+            /// The data the task was completed
             /// </summary>	
 	    	public DateTime  CompletedDate  { get; set; } 	    	
 	    	
 	    	
 	    	/// <summary>
-            /// 
+            /// When the task needs to be completed by
             /// </summary>	
 	    	public DateTime  DueDate  { get; set; } 	    	
 	    	
 	    	
 	    	/// <summary>
-            /// 
+            /// The name of the task to be done
             /// </summary>	
 	    	public string  Name  { get; set; } 	    	
 	    	
 	    	
 	    	/// <summary>
-            /// 
+            /// When the task was started
             /// </summary>	
 	    	public DateTime  StartedDate  { get; set; } 	    	
 	    	
 	    	
 	    	/// <summary>
-            /// 
+            /// The status of the task e.g, Inprogress, Completed
             /// </summary>	
 	    	public int  Status  { get; set; } 	    	
 	    	
 	    	
 	    	/// <summary>
-            /// 
+            /// Unique identifier for a task
             /// </summary>	
 	    	public int  TaskId  { get; set; } 	    	
     						  

@@ -1,4 +1,4 @@
-// ALLOWOVERWRITE-631EB07D807BA620EFED11E357C81DC2
+// ALLOWOVERWRITE-37854CC8E09A03509A2ACC422BD60FBF
 
 
 
@@ -22,7 +22,7 @@ export class UserService {
 
 
 
-  baseURL: string='';
+  baseURL: string='http://test.silvadawn.co.uk:54501';
 
   getAll(): Promise<UserView[]> {
     return this.http.get(this.baseURL + `/api/User/All`)

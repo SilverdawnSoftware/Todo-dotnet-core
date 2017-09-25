@@ -1,4 +1,4 @@
-// ALLOWOVERWRITE-4B81F0A7DE35BE128EF418FDA233A0DD
+// ALLOWOVERWRITE-9655DD42ED6A95BBBEC9E981B71A2C58
 
 using System;
 using System.Collections.Generic;
@@ -13,7 +13,7 @@ namespace ToDo.Transactions.Model
     	
     	
     	/// <summary>
-        /// 
+        /// Unique identifier for a task
         /// </summary>	 
     	public int  TaskId  { get; set; } 
     	

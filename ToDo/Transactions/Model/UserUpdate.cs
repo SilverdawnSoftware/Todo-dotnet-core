@@ -1,4 +1,4 @@
-// ALLOWOVERWRITE-1A92A1591FF4F14D52261D5815CFEB89
+// ALLOWOVERWRITE-384D47D5712725741C1D33C07314857D
 
 using System;
 using System.Collections.Generic;
@@ -12,32 +12,32 @@ namespace ToDo.Transactions.Model
     {
 	    		
 	    		/// <summary>
-                /// 
+                /// The users email address
                 /// </summary>	 
 	    		public string Email  { get; set; } 
 	    		
 	    		/// <summary>
-                /// 
+                /// The users first name
                 /// </summary>	 
 	    		public string FirstName  { get; set; } 
 	    		
 	    		/// <summary>
-                /// 
+                /// The users mobile number
                 /// </summary>	 
 	    		public string MobileNumber  { get; set; } 
 	    		
 	    		/// <summary>
-                /// 
+                /// The users surname
                 /// </summary>	 
 	    		public string Surname  { get; set; } 
 	    		
 	    		/// <summary>
-                /// 
+                /// The title of the user e.g. Mrs,Mr
                 /// </summary>	 
 	    		public string Title  { get; set; } 
 	    		
 	    		/// <summary>
-                /// 
+                /// Unique identifier for user
                 /// </summary>	 
 	    		public int UserId  { get; set; } 
     	

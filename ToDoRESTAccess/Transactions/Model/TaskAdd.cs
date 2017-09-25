@@ -1,4 +1,4 @@
-// ALLOWOVERWRITE-488257380DDA0800B4F98739F160B1BB
+// ALLOWOVERWRITE-BE629285CD227F02535A9E3DA5467E47
 
 using System;
 using System.Collections.Generic;
@@ -15,44 +15,44 @@ namespace ToDo.Transactions.Model
     {
 	    		
 	    		 /// <summary>
-                  /// 
+                  /// The data the task was completed
                   /// </summary>
 				[DataMember(Name = "completedDate")]                
 	    		public DateTime CompletedDate  { get; set; } 
 	    		
 	    		 /// <summary>
-                  /// 
+                  /// When the task needs to be completed by
                   /// </summary>
 				[DataMember(Name = "dueDate")]                
 	    		public DateTime DueDate  { get; set; } 
 	    		
 	    		 /// <summary>
-                  /// 
+                  /// The name of the task to be done
                   /// </summary>
 				[DataMember(Name = "name")]                
 	    		public string Name  { get; set; } 
 	    		
 	    		 /// <summary>
-                  /// 
+                  /// When the task was started
                   /// </summary>
 				[DataMember(Name = "startedDate")]                
 	    		public DateTime StartedDate  { get; set; } 
 	    		
 	    		 /// <summary>
-                  /// 
+                  /// The status of the task e.g, Inprogress, Completed
                   /// </summary>
 				[DataMember(Name = "status")]                
 	    		public int Status  { get; set; } 
 	    		
 	    		 /// <summary>
-                  /// 
+                  /// Unique identifier for a task
                   /// </summary>
 				[DataMember(Name = "taskId")]                
 	    		public int TaskId  { get; set; } 
     	   	
     	
     	/// <summary>
-        /// 
+        /// Unique identifier for user
         /// </summary>	
         [DataMember(Name = "userUserId")] 
     	public int UserUserId { get; set; } 

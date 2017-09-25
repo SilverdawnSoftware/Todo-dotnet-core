@@ -1,4 +1,4 @@
-// ALLOWOVERWRITE-7DE3E00A23C0289D8D65959F8AC44EBC
+// ALLOWOVERWRITE-86C4BF48F7D023E07C6857EE79184BF1
 
 using System;
 using System.Collections.Generic;
@@ -11,27 +11,27 @@ namespace ToDo.Database
     public class Task
     {
 	    		
-	    		/// <summary>  </summary>	 
+	    		/// <summary> Unique identifier for a task </summary>	 
 	    		
 	    		public int TaskId  { get; set; }     	
 	    		
-	    		/// <summary>  </summary>	 
+	    		/// <summary> The name of the task to be done </summary>	 
 	    		
 	    		public string Name  { get; set; }     	
 	    		
-	    		/// <summary>  </summary>	 
+	    		/// <summary> When the task needs to be completed by </summary>	 
 	    		
 	    		public DateTime DueDate  { get; set; }     	
 	    		
-	    		/// <summary>  </summary>	 
+	    		/// <summary> When the task was started </summary>	 
 	    		
 	    		public DateTime StartedDate  { get; set; }     	
 	    		
-	    		/// <summary>  </summary>	 
+	    		/// <summary> The status of the task e.g, Inprogress, Completed </summary>	 
 	    		
 	    		public int Status  { get; set; }     	
 	    		
-	    		/// <summary>  </summary>	 
+	    		/// <summary> The data the task was completed </summary>	 
 	    		
 	    		public DateTime CompletedDate  { get; set; }     	
     	

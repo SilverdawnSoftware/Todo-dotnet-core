@@ -1,4 +1,4 @@
-// ALLOWOVERWRITE-D03B9DB1BDEF3C28FC0D2C31A594E43D
+// ALLOWOVERWRITE-C8E7B9D9A5C45CC3048DFA24B5295901
 
 using System;
 using System.ComponentModel;
@@ -231,7 +231,7 @@ namespace ToDoMobile.ViewModels
 	    	
     	
     	/// <summary>
-        /// 
+        /// Unique identifier for user
         /// </summary>	
        
 		 public int  UserUserId 
