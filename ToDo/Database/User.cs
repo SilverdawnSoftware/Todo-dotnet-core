@@ -1,4 +1,4 @@
-// ALLOWOVERWRITE-5CA97A67991BD25693EF160F7B18A1F5
+// ALLOWOVERWRITE-9755AF067302D758D242B1E34727FDE7
 
 using System;
 using System.Collections.Generic;
@@ -15,6 +15,10 @@ namespace ToDo.Database
 	    		
 	    		public int UserId  { get; set; }     	
 	    		
+	    		/// <summary> The title of the user e.g. Mrs,Mr </summary>	 
+	    		
+	    		public string Title  { get; set; }     	
+	    		
 	    		/// <summary> The users first name </summary>	 
 	    		
 	    		public string FirstName  { get; set; }     	
@@ -30,10 +34,6 @@ namespace ToDo.Database
 	    		/// <summary> The users mobile number </summary>	 
 	    		
 	    		public string MobileNumber  { get; set; }     	
-	    		
-	    		/// <summary> The title of the user e.g. Mrs,Mr </summary>	 
-	    		
-	    		public string Title  { get; set; }     	
     	
     	
     	

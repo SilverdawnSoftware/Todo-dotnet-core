@@ -1,4 +1,4 @@
-// ALLOWOVERWRITE-9F3AF9003E71FC173D8EF75BF5155DF1
+// ALLOWOVERWRITE-74F2F5E644D704C73882A729496C3D81
 
 using System;
 using System.Collections.Generic;
@@ -27,7 +27,7 @@ namespace ToDo.Views
                 DateTimeFormat = new DateTimeFormat("yyyy-MM-dd'T'HH:mm:ss")
             });
 
-            var stream = await client.GetStreamAsync("http://test.silvadawn.co.uk:54501/api/user/all");
+            var stream = await client.GetStreamAsync("http://tododotnet.lan:9271/api/user/all");
 
             var views = serializer.ReadObject(stream) as List<UserView>;
             
@@ -46,7 +46,7 @@ namespace ToDo.Views
                 DateTimeFormat = new DateTimeFormat("yyyy-MM-dd'T'HH:mm:ss")
             });
 
-            var stream = await client.GetStreamAsync($"http://test.silvadawn.co.uk:54501/api/user/{userId}");
+            var stream = await client.GetStreamAsync($"http://tododotnet.lan:9271/api/user/{userId}");
 
             var view = serializer.ReadObject(stream) as UserView;
 

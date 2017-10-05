@@ -1,4 +1,4 @@
-// ALLOWOVERWRITE-72F380E6EB3949BE27B47C8E61256665
+// ALLOWOVERWRITE-DA0847D7F953860D1C7A6016DBBFEF7F
 
 using System;
 using System.Collections.Generic;
@@ -30,7 +30,7 @@ namespace ToDo.Transactions
                 json = sr.ReadToEnd();
             }
 
-            var stream = await client.PostAsync("http://test.silvadawn.co.uk:54501/api/task", new StringContent(json, Encoding.UTF8, "application/json"));
+            var stream = await client.PostAsync("http://tododotnet.lan:9271/api/task", new StringContent(json, Encoding.UTF8, "application/json"));
 
             using (var ms = new MemoryStream())
             {
@@ -63,7 +63,7 @@ namespace ToDo.Transactions
                 json = sr.ReadToEnd();
             }
 
-            var stream = await client.PutAsync($"http://test.silvadawn.co.uk:54501/api/task/{update.TaskId}", new StringContent(json, Encoding.UTF8, "application/json"));
+            var stream = await client.PutAsync($"http://tododotnet.lan:9271/api/task/{update.TaskId}", new StringContent(json, Encoding.UTF8, "application/json"));
 
             using (var ms = new MemoryStream())
             {

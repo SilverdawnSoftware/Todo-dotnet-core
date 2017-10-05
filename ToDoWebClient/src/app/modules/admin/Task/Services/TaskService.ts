@@ -1,4 +1,4 @@
-// ALLOWOVERWRITE-338E84BA47D65916E5C381DDD9CC815F
+// ALLOWOVERWRITE-B19311B9BF85BBDD3C6244825E4E4C8B
 
 
 
@@ -22,7 +22,7 @@ export class TaskService {
 
 
 
-  baseURL: string='http://test.silvadawn.co.uk:54501';
+  baseURL: string='http://tododotnet.lan:9271';
 
   getAll(): Promise<TaskView[]> {
     return this.http.get(this.baseURL + `/api/Task/All`)
