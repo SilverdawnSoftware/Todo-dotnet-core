@@ -1,4 +1,4 @@
-// ALLOWOVERWRITE-B9D5092DC91D2644C4896C2D08BE36C8
+// ALLOWOVERWRITE-AF4DDDB07FFD3779434149292865C49E
 
 using System;
 using System.Collections.Generic;
@@ -6,6 +6,7 @@ using Microsoft.EntityFrameworkCore;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Silverdawn.Exceptions;
 using ToDo.Transactions.Model;
 using ToDo.Views.Model;
 using data = ToDo.Database;
@@ -19,12 +20,21 @@ namespace ToDo.Transactions
  		// Add Transaction Code
  		public async Task<TaskView> Add(TaskAdd add)
         {
-            using (var db = new data.ToDoDbContext())
+        	try
             {
-                var result= await Add(db,add);
-                await db.SaveChangesAsync();
-                return (TaskView)result;
-            }
+	            using (var db = new data.ToDoDbContext())
+	            {
+	                var result= await Add(db,add);
+	                await db.SaveChangesAsync();
+	                return (TaskView)result;
+	            }
+	        }
+            catch (Exception e)
+            {
+            	LogFactory.GetLogger().Log(LogLevel.Error,e);
+                return null;
+              
+            } 
         } 	
  	
  	
@@ -51,8 +61,9 @@ namespace ToDo.Transactions
     		return newTask;
             }
             
-             catch (Exception)
+             catch (Exception e)
             {
+            	LogFactory.GetLogger().Log(LogLevel.Error,e);
                 return null;
               
             }
@@ -63,12 +74,21 @@ namespace ToDo.Transactions
 // Update Transaction Code
  		public async Task<TaskView> Update(TaskUpdate update)
         {
-            using (var db = new data.ToDoDbContext())
+        	try
             {
-                var result= await Update(db,update);
-                await db.SaveChangesAsync();
-                return (TaskView)result;
+	            using (var db = new data.ToDoDbContext())
+	            {
+	                var result= await Update(db,update);
+	                await db.SaveChangesAsync();
+	                return (TaskView)result;
+	            }
             }
+            catch (Exception e)
+            {
+            	LogFactory.GetLogger().Log(LogLevel.Error,e);
+                return null;
+              
+            } 
         } 	
  	
  	
@@ -93,8 +113,9 @@ taskToUpdate.TaskId = update.TaskId;
     		return taskToUpdate;
             }
             
-             catch (Exception)
+             catch (Exception e)
             {
+            	LogFactory.GetLogger().Log(LogLevel.Error,e);
                 return null;
               
             }
@@ -104,12 +125,20 @@ taskToUpdate.TaskId = update.TaskId;
 	// Delete Transaction Code
  		public async Task Delete(TaskDelete delete)
         {
-            using (var db = new data.ToDoDbContext())
+        	try
             {
-                await Delete(db,delete);
-                await db.SaveChangesAsync();
-                
+	            using (var db = new data.ToDoDbContext())
+	            {
+	                await Delete(db,delete);
+	                await db.SaveChangesAsync();	                
+	            }
             }
+            catch (Exception e)
+            {
+            	LogFactory.GetLogger().Log(LogLevel.Error,e);
+               
+              
+            } 
         } 	
  	
  	
@@ -122,8 +151,9 @@ taskToUpdate.TaskId = update.TaskId;
             
              	db.Tasks.Remove(taskToDelete);    		
     		}
-             catch (Exception)
+             catch (Exception e)
             {
+            	LogFactory.GetLogger().Log(LogLevel.Error,e);
             }
         }
         

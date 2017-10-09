@@ -1,4 +1,4 @@
-// ALLOWOVERWRITE-74F2F5E644D704C73882A729496C3D81
+// ALLOWOVERWRITE-A607273A128905326B5A4121D80DE959
 
 using System;
 using System.Collections.Generic;
@@ -8,8 +8,7 @@ using System.Runtime.Serialization;
 using System.Runtime.Serialization.Json;
 using System.Text;
 using System.Threading.Tasks;
-using ToDo.Views.Model;
-
+using Silverdawn.Exceptions;
 using ToDo.Views.Model;
 
 
@@ -20,37 +19,52 @@ namespace ToDo.Views
         
     	public async Task<List<UserView>> GetAll()
         {
-            var client = new HttpClient();
-          
-            var serializer = new DataContractJsonSerializer(typeof(List<UserView>),new DataContractJsonSerializerSettings()
+        	try
+            {       
+	            var client = new HttpClient();
+	          
+	            var serializer = new DataContractJsonSerializer(typeof(List<UserView>),new DataContractJsonSerializerSettings()
+	            {
+	                DateTimeFormat = new DateTimeFormat("yyyy-MM-dd'T'HH:mm:ss")
+	            });
+	
+	            var stream = await client.GetStreamAsync("http://tododotnet.lan:9271/api/user/all");
+	
+	            var views = serializer.ReadObject(stream) as List<UserView>;
+	            
+	            return views;
+            }
+            catch (Exception e)
             {
-                DateTimeFormat = new DateTimeFormat("yyyy-MM-dd'T'HH:mm:ss")
-            });
-
-            var stream = await client.GetStreamAsync("http://tododotnet.lan:9271/api/user/all");
-
-            var views = serializer.ReadObject(stream) as List<UserView>;
-            
-            return views;
+            	LogFactory.GetLogger().Log(LogLevel.Error,e);
+                return null;              
+            }    
         }
     
     
     	
     	public async Task<UserView> Get(int userId)
     	{
-    	
-    		var client = new HttpClient();
-
-            var serializer = new DataContractJsonSerializer(typeof(UserView),new DataContractJsonSerializerSettings()
+    		try
             {
-                DateTimeFormat = new DateTimeFormat("yyyy-MM-dd'T'HH:mm:ss")
-            });
-
-            var stream = await client.GetStreamAsync($"http://tododotnet.lan:9271/api/user/{userId}");
-
-            var view = serializer.ReadObject(stream) as UserView;
-
-            return view;
+	    		var client = new HttpClient();
+	
+	            var serializer = new DataContractJsonSerializer(typeof(UserView),new DataContractJsonSerializerSettings()
+	            {
+	                DateTimeFormat = new DateTimeFormat("yyyy-MM-dd'T'HH:mm:ss")
+	            });
+	
+	            var stream = await client.GetStreamAsync($"http://tododotnet.lan:9271/api/user/{userId}");
+	
+	            var view = serializer.ReadObject(stream) as UserView;
+	
+	            return view;
+            }
+            catch (Exception e)
+            {
+            	LogFactory.GetLogger().Log(LogLevel.Error,e);
+                return null;              
+            }    
     	
     	}
     	
