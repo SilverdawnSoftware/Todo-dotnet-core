@@ -1,60 +1,77 @@
-<!-- ALLOWOVERWRITE-BD22CB3A8C4E9B360A84450155FAA225 -->
+<!-- ALLOWOVERWRITE-E6B28CDCBE3DD606ED04EDA7B6B3BB78 -->
 
 
+ <form [formGroup]="taskForm" class="form-horizontal css-form" role="form" (ngSubmit)="update()">
+        <mat-tab-group >
+        
+        	
+        	
+        	 <mat-tab label="Main">        	 
+        	 		<div fxLayout="row" fxLayout.xs="column" fxLayout.sm="column" fxFlex>
+        	 			<div fxFlex>	
+	    	            	    				
+                         <mat-form-field>                            
+                                <input matInput formControlName="completedDate" id="taskCompletedDate" type="date" placeholder="CompletedDate"  required/>
+						</mat-form-field>                       
+                        
 
-        <md-tab-group >
-        <md-tab label="Main">
-        	 <form [formGroup]="taskForm" class="form-horizontal css-form" role="form" (ngSubmit)="update()">
-	    	            
-	    				<md-input-container style="width: 100%">
-                            <label for="taskCompletedDate" class="col-sm-2 control-label">CompletedDate</label>
-                            
-                                <input mdInput formControlName="completedDate" id="taskCompletedDate" type="date" class="form-control" required/>
-                            
-                        </md-input-container>
+        	 			</div>
+        	 		</div>
+        	 		<div fxLayout="row" fxLayout.xs="column" fxLayout.sm="column" fxFlex>
+        	 			<div fxFlex>	
+	    	            	    				
+                         <mat-form-field>                            
+                                <input matInput formControlName="dueDate" id="taskDueDate" type="date" placeholder="DueDate"  required/>
+						</mat-form-field>                       
                         
-	    	            
-	    				<md-input-container style="width: 100%">
-                            <label for="taskDueDate" class="col-sm-2 control-label">DueDate</label>
-                            
-                                <input mdInput formControlName="dueDate" id="taskDueDate" type="date" class="form-control" required/>
-                            
-                        </md-input-container>
+
+        	 			</div>
+        	 		</div>
+        	 		<div fxLayout="row" fxLayout.xs="column" fxLayout.sm="column" fxFlex>
+        	 			<div fxFlex>	
+	    	            	    				
+                         <mat-form-field>                            
+                                <input matInput formControlName="name" id="taskName" type="text" placeholder="Name"  required/>
+						</mat-form-field>                       
                         
-	    	            
-	    				<md-input-container style="width: 100%">
-                            <label for="taskName" class="col-sm-2 control-label">Name</label>
-                            
-                                <input mdInput formControlName="name" id="taskName" type="text" class="form-control" required/>
-                            
-                        </md-input-container>
+
+        	 			</div>
+        	 		</div>
+        	 		<div fxLayout="row" fxLayout.xs="column" fxLayout.sm="column" fxFlex>
+        	 			<div fxFlex>	
+	    	            	    				
+                         <mat-form-field>                            
+                                <input matInput formControlName="startedDate" id="taskStartedDate" type="date" placeholder="StartedDate"  required/>
+						</mat-form-field>                       
                         
-	    	            
-	    				<md-input-container style="width: 100%">
-                            <label for="taskStartedDate" class="col-sm-2 control-label">StartedDate</label>
-                            
-                                <input mdInput formControlName="startedDate" id="taskStartedDate" type="date" class="form-control" required/>
-                            
-                        </md-input-container>
+
+        	 			</div>
+        	 		</div>
+        	 		<div fxLayout="row" fxLayout.xs="column" fxLayout.sm="column" fxFlex>
+        	 			<div fxFlex>	
+	    	            	    				
+                         <mat-form-field>                            
+                                <input matInput formControlName="status" id="taskStatus" type="number" placeholder="Status"  required/>
+						</mat-form-field>                       
                         
-	    	            
-	    				<md-input-container style="width: 100%">
-                            <label for="taskStatus" class="col-sm-2 control-label">Status</label>
-                            
-                                <input mdInput formControlName="status" id="taskStatus" type="number" class="form-control" required/>
-                            
-                        </md-input-container>
-                        
-        	 	 	 	<div class="form-group">
-	              	 		<div class="col-sm-2"></div>
-                  	  		<div class="col-sm-10">
-                        		<button md-raised-button color="primary" ng-click="save()">Save</button>
-                   	 		</div>
-	            	 	</div>
-        	 </form>
-        	 </md-tab>
+
+        	 			</div>
+        	 		</div>
+        	 		<div fxLayout="row" fxLayout.xs="column" fxLayout.sm="column" fxFlex>
+        	 			<div fxFlex>	
+
+        	 			</div>
+        	 		</div>
+        	 
+			 </mat-tab>
+
+        	 
     	
         	 
         	 
-        	 </md-tab-group>
-  
+        	 </mat-tab-group>
+   <div style="padding-top: 10px;">
+	    <button mat-raised-button color="primary" ng-click="save()">Save</button>
+   </div>
+        	 
+   </form>

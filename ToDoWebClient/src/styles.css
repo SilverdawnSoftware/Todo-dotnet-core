@@ -59,10 +59,18 @@ body h1 {
 
 }
 
-.mat-sidenav-content {
+/*.mat-sidenav-content {
   display: flex !important;
   flex-direction: column;
+}*/
+
+.mat-sidenav-content {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
 }
+
 
 .app-datatable{
   /*flex: 1 0 auto;*/
