@@ -1,4 +1,4 @@
-// ALLOWOVERWRITE-4BBB5404099D1ADFFFA4F53AE9EBDD04
+// ALLOWOVERWRITE-21DC6FC8DE8E3AF0029E21A1BD0572CC
 
 using System;
 using System.Collections.Generic;
@@ -15,6 +15,42 @@ namespace ToDo.Transactions.Model
     {
 	    		
 	    		 /// <summary>
+                  /// 
+                  /// </summary>
+				[DataMember(Name = "addressLine1")]                
+	    		public string AddressLine1  { get; set; } 
+	    		
+	    		 /// <summary>
+                  /// 
+                  /// </summary>
+				[DataMember(Name = "addressLine2")]                
+	    		public string AddressLine2  { get; set; } 
+	    		
+	    		 /// <summary>
+                  /// 
+                  /// </summary>
+				[DataMember(Name = "city")]                
+	    		public string City  { get; set; } 
+	    		
+	    		 /// <summary>
+                  /// 
+                  /// </summary>
+				[DataMember(Name = "company")]                
+	    		public string Company  { get; set; } 
+	    		
+	    		 /// <summary>
+                  /// 
+                  /// </summary>
+				[DataMember(Name = "country")]                
+	    		public string Country  { get; set; } 
+	    		
+	    		 /// <summary>
+                  /// 
+                  /// </summary>
+				[DataMember(Name = "department")]                
+	    		public string Department  { get; set; } 
+	    		
+	    		 /// <summary>
                   /// The users email address
                   /// </summary>
 				[DataMember(Name = "email")]                
@@ -27,10 +63,22 @@ namespace ToDo.Transactions.Model
 	    		public string FirstName  { get; set; } 
 	    		
 	    		 /// <summary>
+                  /// 
+                  /// </summary>
+				[DataMember(Name = "homeNumber")]                
+	    		public string HomeNumber  { get; set; } 
+	    		
+	    		 /// <summary>
                   /// The users mobile number
                   /// </summary>
 				[DataMember(Name = "mobileNumber")]                
 	    		public string MobileNumber  { get; set; } 
+	    		
+	    		 /// <summary>
+                  /// 
+                  /// </summary>
+				[DataMember(Name = "postcode")]                
+	    		public string Postcode  { get; set; } 
 	    		
 	    		 /// <summary>
                   /// The users surname
@@ -49,6 +97,12 @@ namespace ToDo.Transactions.Model
                   /// </summary>
 				[DataMember(Name = "userId")]                
 	    		public int UserId  { get; set; } 
+	    		
+	    		 /// <summary>
+                  /// 
+                  /// </summary>
+				[DataMember(Name = "workNumber")]                
+	    		public string WorkNumber  { get; set; } 
     	   	
     }    	    	
 }

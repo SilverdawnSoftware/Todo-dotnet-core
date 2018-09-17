@@ -1,4 +1,4 @@
-// ALLOWOVERWRITE-30D3F5171A0FA787592579E2E7544095
+// ALLOWOVERWRITE-5F19E552142718AFD6275E206E00F769
 
 import { Component,OnInit } from '@angular/core';
 import { FormGroup, FormControl, FormBuilder } from '@angular/forms';
@@ -55,11 +55,20 @@ import {TaskService} from "../../Task/Services/TaskService"
         
          ngOnInit() {
     this.userForm = this.formBuilder.group({
+	    				addressLine1: "", 
+	    				addressLine2: "", 
+	    				city: "", 
+	    				company: "", 
+	    				country: "", 
+	    				department: "", 
 	    				email: "", 
 	    				firstName: "", 
+	    				homeNumber: "", 
 	    				mobileNumber: "", 
+	    				postcode: "", 
 	    				surname: "", 
 	    				title: "", 
+	    				workNumber: "", 
       
     });
          
@@ -84,9 +93,7 @@ import {TaskService} from "../../Task/Services/TaskService"
           }
           else
           {
-          
-          
-            this.userService.add(userModel).then(value => this.router.navigateByUrl("/admin/user/edit/"+value.userId));
+              this.userService.add(userModel).then(value => this.router.navigateByUrl("/admin/user/edit/"+value.userId));
           }
       }
 

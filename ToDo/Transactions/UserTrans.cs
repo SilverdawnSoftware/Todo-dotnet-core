@@ -1,4 +1,4 @@
-// ALLOWOVERWRITE-83F35800F0089D8B91F88F0F4E08F792
+// ALLOWOVERWRITE-9474C842C130055BFAEA0D558C5A8B19
 
 using System;
 using System.Collections.Generic;
@@ -44,11 +44,20 @@ namespace ToDo.Transactions
             {
             
                var newUser=new data.User();
+	    	newUser.AddressLine1 = add.AddressLine1;   	
+	    	newUser.AddressLine2 = add.AddressLine2;   	
+	    	newUser.City = add.City;   	
+	    	newUser.Company = add.Company;   	
+	    	newUser.Country = add.Country;   	
+	    	newUser.Department = add.Department;   	
 	    	newUser.Email = add.Email;   	
 	    	newUser.FirstName = add.FirstName;   	
+	    	newUser.HomeNumber = add.HomeNumber;   	
 	    	newUser.MobileNumber = add.MobileNumber;   	
+	    	newUser.Postcode = add.Postcode;   	
 	    	newUser.Surname = add.Surname;   	
 	    	newUser.Title = add.Title;   	
+	    	newUser.WorkNumber = add.WorkNumber;   	
     	
     		// Add references to parent Classes
     	
@@ -97,12 +106,21 @@ namespace ToDo.Transactions
 
                
             	
+userToUpdate.AddressLine1 = update.AddressLine1;   	
+userToUpdate.AddressLine2 = update.AddressLine2;   	
+userToUpdate.City = update.City;   	
+userToUpdate.Company = update.Company;   	
+userToUpdate.Country = update.Country;   	
+userToUpdate.Department = update.Department;   	
 userToUpdate.Email = update.Email;   	
 userToUpdate.FirstName = update.FirstName;   	
+userToUpdate.HomeNumber = update.HomeNumber;   	
 userToUpdate.MobileNumber = update.MobileNumber;   	
+userToUpdate.Postcode = update.Postcode;   	
 userToUpdate.Surname = update.Surname;   	
 userToUpdate.Title = update.Title;   	
 userToUpdate.UserId = update.UserId;   	
+userToUpdate.WorkNumber = update.WorkNumber;   	
             	
     	
     		

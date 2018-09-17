@@ -1,4 +1,4 @@
-// ALLOWOVERWRITE-E788F129AFB0EE612512E0B6F2456089
+// ALLOWOVERWRITE-C95DB1B45E2C0B5F0B966EC42732D936
 
 using System;
 using System.ComponentModel;
@@ -111,17 +111,146 @@ namespace ToDoMobile.ViewModels
             set
             {
                 this._userView = value;
+                OnPropertyChanged("AddressLine1");
+                OnPropertyChanged("AddressLine2");
+                OnPropertyChanged("City");
+                OnPropertyChanged("Company");
+                OnPropertyChanged("Country");
+                OnPropertyChanged("Department");
                 OnPropertyChanged("Email");
                 OnPropertyChanged("FirstName");
+                OnPropertyChanged("HomeNumber");
                 OnPropertyChanged("MobileNumber");
+                OnPropertyChanged("Postcode");
                 OnPropertyChanged("Surname");
                 OnPropertyChanged("Title");
                 OnPropertyChanged("UserId");
+                OnPropertyChanged("WorkNumber");
                               
             }
         }
 
 		
+       	 
+        /// <summary>
+        /// 
+        /// </summary>	
+        public string  AddressLine1 
+        {
+            set
+            {
+                if (UserView.AddressLine1 != value)
+                {
+                    UserView.AddressLine1 = value;
+                    OnPropertyChanged("AddressLine1");
+                }
+            }
+            get
+            {
+                return UserView.AddressLine1;
+            } 
+        } 	    	
+	    	
+       	 
+        /// <summary>
+        /// 
+        /// </summary>	
+        public string  AddressLine2 
+        {
+            set
+            {
+                if (UserView.AddressLine2 != value)
+                {
+                    UserView.AddressLine2 = value;
+                    OnPropertyChanged("AddressLine2");
+                }
+            }
+            get
+            {
+                return UserView.AddressLine2;
+            } 
+        } 	    	
+	    	
+       	 
+        /// <summary>
+        /// 
+        /// </summary>	
+        public string  City 
+        {
+            set
+            {
+                if (UserView.City != value)
+                {
+                    UserView.City = value;
+                    OnPropertyChanged("City");
+                }
+            }
+            get
+            {
+                return UserView.City;
+            } 
+        } 	    	
+	    	
+       	 
+        /// <summary>
+        /// 
+        /// </summary>	
+        public string  Company 
+        {
+            set
+            {
+                if (UserView.Company != value)
+                {
+                    UserView.Company = value;
+                    OnPropertyChanged("Company");
+                }
+            }
+            get
+            {
+                return UserView.Company;
+            } 
+        } 	    	
+	    	
+       	 
+        /// <summary>
+        /// 
+        /// </summary>	
+        public string  Country 
+        {
+            set
+            {
+                if (UserView.Country != value)
+                {
+                    UserView.Country = value;
+                    OnPropertyChanged("Country");
+                }
+            }
+            get
+            {
+                return UserView.Country;
+            } 
+        } 	    	
+	    	
+       	 
+        /// <summary>
+        /// 
+        /// </summary>	
+        public string  Department 
+        {
+            set
+            {
+                if (UserView.Department != value)
+                {
+                    UserView.Department = value;
+                    OnPropertyChanged("Department");
+                }
+            }
+            get
+            {
+                return UserView.Department;
+            } 
+        } 	    	
+	    	
        	 
         /// <summary>
         /// 
@@ -166,6 +295,26 @@ namespace ToDoMobile.ViewModels
         /// <summary>
         /// 
         /// </summary>	
+        public string  HomeNumber 
+        {
+            set
+            {
+                if (UserView.HomeNumber != value)
+                {
+                    UserView.HomeNumber = value;
+                    OnPropertyChanged("HomeNumber");
+                }
+            }
+            get
+            {
+                return UserView.HomeNumber;
+            } 
+        } 	    	
+	    	
+       	 
+        /// <summary>
+        /// 
+        /// </summary>	
         public string  MobileNumber 
         {
             set
@@ -179,6 +328,26 @@ namespace ToDoMobile.ViewModels
             get
             {
                 return UserView.MobileNumber;
+            } 
+        } 	    	
+	    	
+       	 
+        /// <summary>
+        /// 
+        /// </summary>	
+        public string  Postcode 
+        {
+            set
+            {
+                if (UserView.Postcode != value)
+                {
+                    UserView.Postcode = value;
+                    OnPropertyChanged("Postcode");
+                }
+            }
+            get
+            {
+                return UserView.Postcode;
             } 
         } 	    	
 	    	
@@ -242,6 +411,26 @@ namespace ToDoMobile.ViewModels
             } 
         } 	    	
 	    	
+       	 
+        /// <summary>
+        /// 
+        /// </summary>	
+        public string  WorkNumber 
+        {
+            set
+            {
+                if (UserView.WorkNumber != value)
+                {
+                    UserView.WorkNumber = value;
+                    OnPropertyChanged("WorkNumber");
+                }
+            }
+            get
+            {
+                return UserView.WorkNumber;
+            } 
+        } 	    	
+	    	
 	    	
 	    	
 	    	
@@ -252,12 +441,21 @@ namespace ToDoMobile.ViewModels
         {
             var result = new UserUpdate();
 
+			result.AddressLine1 = UserView.AddressLine1;
+			result.AddressLine2 = UserView.AddressLine2;
+			result.City = UserView.City;
+			result.Company = UserView.Company;
+			result.Country = UserView.Country;
+			result.Department = UserView.Department;
 			result.Email = UserView.Email;
 			result.FirstName = UserView.FirstName;
+			result.HomeNumber = UserView.HomeNumber;
 			result.MobileNumber = UserView.MobileNumber;
+			result.Postcode = UserView.Postcode;
 			result.Surname = UserView.Surname;
 			result.Title = UserView.Title;
 			result.UserId = UserView.UserId;
+			result.WorkNumber = UserView.WorkNumber;
             return result;
         }
 
@@ -265,12 +463,21 @@ namespace ToDoMobile.ViewModels
         {
             var result = new UserAdd();
 
+			result.AddressLine1 = UserView.AddressLine1;
+			result.AddressLine2 = UserView.AddressLine2;
+			result.City = UserView.City;
+			result.Company = UserView.Company;
+			result.Country = UserView.Country;
+			result.Department = UserView.Department;
 			result.Email = UserView.Email;
 			result.FirstName = UserView.FirstName;
+			result.HomeNumber = UserView.HomeNumber;
 			result.MobileNumber = UserView.MobileNumber;
+			result.Postcode = UserView.Postcode;
 			result.Surname = UserView.Surname;
 			result.Title = UserView.Title;
 			result.UserId = UserView.UserId;
+			result.WorkNumber = UserView.WorkNumber;
                        return result;
         }
 
@@ -281,12 +488,21 @@ namespace ToDoMobile.ViewModels
     	{
        	    var result=new UserEditViewModel();
     	 
+			 result.AddressLine1 = item.AddressLine1;
+			 result.AddressLine2 = item.AddressLine2;
+			 result.City = item.City;
+			 result.Company = item.Company;
+			 result.Country = item.Country;
+			 result.Department = item.Department;
 			 result.Email = item.Email;
 			 result.FirstName = item.FirstName;
+			 result.HomeNumber = item.HomeNumber;
 			 result.MobileNumber = item.MobileNumber;
+			 result.Postcode = item.Postcode;
 			 result.Surname = item.Surname;
 			 result.Title = item.Title;
 			 result.UserId = item.UserId;
+			 result.WorkNumber = item.WorkNumber;
 	    	
         	return result;
        }

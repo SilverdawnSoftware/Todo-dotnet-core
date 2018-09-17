@@ -1,12 +1,9 @@
-<!-- ALLOWOVERWRITE-462754D9CB9A2DF66D5AED22BFE0934D -->
+<!-- ALLOWOVERWRITE-2BA2671B83558743DDC865C217CB604E -->
 
 
  <form [formGroup]="userForm" class="form-horizontal css-form" role="form" (ngSubmit)="update()">
-        <mat-tab-group >
-        
-        	
-        	
-        	 <mat-tab label="Name">        	 
+        <mat-tab-group >        	
+        	 <mat-tab label="User Details">        	 
         	 		<div fxLayout="row" fxLayout.xs="column" fxLayout.sm="column" fxFlex>
         	 			<div fxFlex>	
 	    	            	    				
@@ -17,9 +14,6 @@
 
         	 			</div>
         	 			<div fxFlex>	
-
-        	 			</div>
-        	 			<div fxFlex>	
 	    	            	    				
                          <mat-form-field>                            
                                 <input matInput formControlName="firstName" id="userFirstName" type="text" placeholder="FirstName"  required/>
@@ -27,19 +21,6 @@
                         
 
         	 			</div>
-        	 		</div>
-        	 		<div fxLayout="row" fxLayout.xs="column" fxLayout.sm="column" fxFlex>
-        	 			<div fxFlex>	
-
-        	 			</div>
-        	 			<div fxFlex>	
-
-        	 			</div>
-        	 			<div fxFlex>	
-
-        	 			</div>
-        	 		</div>
-        	 		<div fxLayout="row" fxLayout.xs="column" fxLayout.sm="column" fxFlex>
         	 			<div fxFlex>	
 	    	            	    				
                          <mat-form-field>                            
@@ -48,16 +29,7 @@
                         
 
         	 			</div>
-        	 			<div fxFlex>	
-
-        	 			</div>
-        	 			<div fxFlex>	
-
-        	 			</div>
         	 		</div>
-        	 
-			 </mat-tab>
-        	 <mat-tab label="Contact Details">        	 
         	 		<div fxLayout="row" fxLayout.xs="column" fxLayout.sm="column" fxFlex>
         	 			<div fxFlex>	
 	    	            	    				
@@ -67,14 +39,127 @@
                         
 
         	 			</div>
+        	 			<div fxFlex>	
+
+        	 			</div>
+        	 			<div fxFlex>	
+
+        	 			</div>
         	 		</div>
         	 		<div fxLayout="row" fxLayout.xs="column" fxLayout.sm="column" fxFlex>
+        	 			<div fxFlex>	
+	    	            	    				
+                         <mat-form-field>                            
+                                <input matInput formControlName="homeNumber" id="userHomeNumber" type="text" placeholder="HomeNumber"  required/>
+						</mat-form-field>                       
+                        
+
+        	 			</div>
         	 			<div fxFlex>	
 	    	            	    				
                          <mat-form-field>                            
                                 <input matInput formControlName="mobileNumber" id="userMobileNumber" type="text" placeholder="MobileNumber"  required/>
 						</mat-form-field>                       
                         
+
+        	 			</div>
+        	 			<div fxFlex>	
+	    	            	    				
+                         <mat-form-field>                            
+                                <input matInput formControlName="workNumber" id="userWorkNumber" type="text" placeholder="WorkNumber"  required/>
+						</mat-form-field>                       
+                        
+
+        	 			</div>
+        	 		</div>
+        	 		<div fxLayout="row" fxLayout.xs="column" fxLayout.sm="column" fxFlex>
+        	 			<div fxFlex>	
+
+        	 			</div>
+        	 			<div fxFlex>	
+
+        	 			</div>
+        	 			<div fxFlex>	
+
+        	 			</div>
+        	 		</div>
+        	 		<div fxLayout="row" fxLayout.xs="column" fxLayout.sm="column" fxFlex>
+        	 			<div fxFlex>	
+	    	            	    				
+                         <mat-form-field>                            
+                                <input matInput formControlName="addressLine1" id="userAddressLine1" type="text" placeholder="AddressLine1"  required/>
+						</mat-form-field>                       
+                        
+
+        	 			</div>
+        	 			<div fxFlex>	
+
+        	 			</div>
+        	 			<div fxFlex>	
+
+        	 			</div>
+        	 		</div>
+        	 		<div fxLayout="row" fxLayout.xs="column" fxLayout.sm="column" fxFlex>
+        	 			<div fxFlex>	
+	    	            	    				
+                         <mat-form-field>                            
+                                <input matInput formControlName="addressLine2" id="userAddressLine2" type="text" placeholder="AddressLine2"  required/>
+						</mat-form-field>                       
+                        
+
+        	 			</div>
+        	 			<div fxFlex>	
+
+        	 			</div>
+        	 			<div fxFlex>	
+
+        	 			</div>
+        	 		</div>
+        	 		<div fxLayout="row" fxLayout.xs="column" fxLayout.sm="column" fxFlex>
+        	 			<div fxFlex>	
+	    	            	    				
+                         <mat-form-field>                            
+                                <input matInput formControlName="city" id="userCity" type="text" placeholder="City"  required/>
+						</mat-form-field>                       
+                        
+
+        	 			</div>
+        	 			<div fxFlex>	
+
+        	 			</div>
+        	 			<div fxFlex>	
+
+        	 			</div>
+        	 		</div>
+        	 		<div fxLayout="row" fxLayout.xs="column" fxLayout.sm="column" fxFlex>
+        	 			<div fxFlex>	
+	    	            	    				
+                         <mat-form-field>                            
+                                <input matInput formControlName="postcode" id="userPostcode" type="text" placeholder="Postcode"  required/>
+						</mat-form-field>                       
+                        
+
+        	 			</div>
+        	 			<div fxFlex>	
+
+        	 			</div>
+        	 			<div fxFlex>	
+
+        	 			</div>
+        	 		</div>
+        	 		<div fxLayout="row" fxLayout.xs="column" fxLayout.sm="column" fxFlex>
+        	 			<div fxFlex>	
+	    	            	    				
+                         <mat-form-field>                            
+                                <input matInput formControlName="country" id="userCountry" type="text" placeholder="Country"  required/>
+						</mat-form-field>                       
+                        
+
+        	 			</div>
+        	 			<div fxFlex>	
+
+        	 			</div>
+        	 			<div fxFlex>	
 
         	 			</div>
         	 		</div>

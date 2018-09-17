@@ -1,4 +1,4 @@
-// ALLOWOVERWRITE-9755AF067302D758D242B1E34727FDE7
+// ALLOWOVERWRITE-FA349C232DC89345C84E4A6BA1821546
 
 using System;
 using System.Collections.Generic;
@@ -34,6 +34,42 @@ namespace ToDo.Database
 	    		/// <summary> The users mobile number </summary>	 
 	    		
 	    		public string MobileNumber  { get; set; }     	
+	    		
+	    		/// <summary>  </summary>	 
+	    		
+	    		public string HomeNumber  { get; set; }     	
+	    		
+	    		/// <summary>  </summary>	 
+	    		
+	    		public string WorkNumber  { get; set; }     	
+	    		
+	    		/// <summary>  </summary>	 
+	    		
+	    		public string AddressLine1  { get; set; }     	
+	    		
+	    		/// <summary>  </summary>	 
+	    		
+	    		public string AddressLine2  { get; set; }     	
+	    		
+	    		/// <summary>  </summary>	 
+	    		
+	    		public string City  { get; set; }     	
+	    		
+	    		/// <summary>  </summary>	 
+	    		
+	    		public string Postcode  { get; set; }     	
+	    		
+	    		/// <summary>  </summary>	 
+	    		
+	    		public string Country  { get; set; }     	
+	    		
+	    		/// <summary>  </summary>	 
+	    		
+	    		public string Company  { get; set; }     	
+	    		
+	    		/// <summary>  </summary>	 
+	    		
+	    		public string Department  { get; set; }     	
     	
     	
     	

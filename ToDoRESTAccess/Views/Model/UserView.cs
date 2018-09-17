@@ -1,4 +1,4 @@
-// ALLOWOVERWRITE-F72570012BA0E9FC6F9F98C220206F2B
+// ALLOWOVERWRITE-403196B8DC599B9E2E315FB449004CA7
 
 using System;
 using System.Collections.Generic;
@@ -18,6 +18,48 @@ namespace ToDo.Views.Model
 	    	
 	    	
 	    	/// <summary>
+            /// 
+            /// </summary>
+			 [DataMember(Name = "addressLine1")]            
+	    	public string  AddressLine1  { get; set; } 	    	
+	    	
+	    	
+	    	/// <summary>
+            /// 
+            /// </summary>
+			 [DataMember(Name = "addressLine2")]            
+	    	public string  AddressLine2  { get; set; } 	    	
+	    	
+	    	
+	    	/// <summary>
+            /// 
+            /// </summary>
+			 [DataMember(Name = "city")]            
+	    	public string  City  { get; set; } 	    	
+	    	
+	    	
+	    	/// <summary>
+            /// 
+            /// </summary>
+			 [DataMember(Name = "company")]            
+	    	public string  Company  { get; set; } 	    	
+	    	
+	    	
+	    	/// <summary>
+            /// 
+            /// </summary>
+			 [DataMember(Name = "country")]            
+	    	public string  Country  { get; set; } 	    	
+	    	
+	    	
+	    	/// <summary>
+            /// 
+            /// </summary>
+			 [DataMember(Name = "department")]            
+	    	public string  Department  { get; set; } 	    	
+	    	
+	    	
+	    	/// <summary>
             /// The users email address
             /// </summary>
 			 [DataMember(Name = "email")]            
@@ -32,10 +74,24 @@ namespace ToDo.Views.Model
 	    	
 	    	
 	    	/// <summary>
+            /// 
+            /// </summary>
+			 [DataMember(Name = "homeNumber")]            
+	    	public string  HomeNumber  { get; set; } 	    	
+	    	
+	    	
+	    	/// <summary>
             /// The users mobile number
             /// </summary>
 			 [DataMember(Name = "mobileNumber")]            
 	    	public string  MobileNumber  { get; set; } 	    	
+	    	
+	    	
+	    	/// <summary>
+            /// 
+            /// </summary>
+			 [DataMember(Name = "postcode")]            
+	    	public string  Postcode  { get; set; } 	    	
 	    	
 	    	
 	    	/// <summary>
@@ -57,6 +113,13 @@ namespace ToDo.Views.Model
             /// </summary>
 			 [DataMember(Name = "userId")]            
 	    	public int  UserId  { get; set; } 	    	
+	    	
+	    	
+	    	/// <summary>
+            /// 
+            /// </summary>
+			 [DataMember(Name = "workNumber")]            
+	    	public string  WorkNumber  { get; set; } 	    	
     	    	
     	
     	

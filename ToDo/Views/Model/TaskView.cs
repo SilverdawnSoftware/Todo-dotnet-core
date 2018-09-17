@@ -1,4 +1,4 @@
-// ALLOWOVERWRITE-32091EDE62D983DB4BF5355B815946EE
+// ALLOWOVERWRITE-4183B793CB6E8FE29032F13BC273743F
 
 using System;
 using System.Collections.Generic;
@@ -55,11 +55,6 @@ namespace ToDo.Views.Model
                       /// Reference of PrimaryKey for User
                       /// </summary>
 					  public  int UserUserId { get; set; }   
-					  
-					  /// <summary>
-                      /// Reference to  User Email Property
-                      /// </summary>	
-					  public string UserEmail { get; set; }   
     	
     	
     	
@@ -78,10 +73,6 @@ if (item.User != null)
 			    			{   
 		    		   result.UserUserId=item.User.UserId;
 		    		   } 
-		    		if (item.User != null) 
-			    			{   	
-		    			result.UserEmail=item.User.Email; 
-		    			} 
     	
     	
     	return result;

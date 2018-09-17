@@ -18,7 +18,7 @@ namespace ToDoRestAPI
                 .UseIISIntegration()
                 .UseStartup<Startup>()
                 .UseApplicationInsights()
-                .UseUrls("http://tododotnet.lan:9271", "http://localhost:9271")
+                .UseUrls("http://omega.lan:9271", "http://localhost:9271")
                 .Build();
 
             host.Run();

@@ -1,4 +1,4 @@
-// ALLOWOVERWRITE-F416B27FA36DE80C29072E163E86DFC6
+// ALLOWOVERWRITE-31F3E6134E5FB82BFF823520799E3D0F
 
 using System;
 using System.Collections.Generic;
@@ -12,6 +12,36 @@ namespace ToDo.Transactions.Model
     {
 	    		
 	    		 /// <summary>
+                  /// 
+                  /// </summary>	    		
+	    		public string AddressLine1  { get; set; } 
+	    		
+	    		 /// <summary>
+                  /// 
+                  /// </summary>	    		
+	    		public string AddressLine2  { get; set; } 
+	    		
+	    		 /// <summary>
+                  /// 
+                  /// </summary>	    		
+	    		public string City  { get; set; } 
+	    		
+	    		 /// <summary>
+                  /// 
+                  /// </summary>	    		
+	    		public string Company  { get; set; } 
+	    		
+	    		 /// <summary>
+                  /// 
+                  /// </summary>	    		
+	    		public string Country  { get; set; } 
+	    		
+	    		 /// <summary>
+                  /// 
+                  /// </summary>	    		
+	    		public string Department  { get; set; } 
+	    		
+	    		 /// <summary>
                   /// The users email address
                   /// </summary>	    		
 	    		public string Email  { get; set; } 
@@ -22,9 +52,19 @@ namespace ToDo.Transactions.Model
 	    		public string FirstName  { get; set; } 
 	    		
 	    		 /// <summary>
+                  /// 
+                  /// </summary>	    		
+	    		public string HomeNumber  { get; set; } 
+	    		
+	    		 /// <summary>
                   /// The users mobile number
                   /// </summary>	    		
 	    		public string MobileNumber  { get; set; } 
+	    		
+	    		 /// <summary>
+                  /// 
+                  /// </summary>	    		
+	    		public string Postcode  { get; set; } 
 	    		
 	    		 /// <summary>
                   /// The users surname
@@ -40,6 +80,11 @@ namespace ToDo.Transactions.Model
                   /// Unique identifier for user
                   /// </summary>	    		
 	    		public int UserId  { get; set; } 
+	    		
+	    		 /// <summary>
+                  /// 
+                  /// </summary>	    		
+	    		public string WorkNumber  { get; set; } 
     	   	
     }    	    	
 }

@@ -1,4 +1,4 @@
-// ALLOWOVERWRITE-90B4664124A6715BD5B905E204129B9B
+// ALLOWOVERWRITE-851E67B226A109C4F0579505047FBB10
 
 using System;
 using System.Collections.Generic;
@@ -17,6 +17,42 @@ namespace ToDo.Views.Model
 	    	
 	    	
 	    	/// <summary>
+            /// 
+            /// </summary>	
+	    	public string  AddressLine1  { get; set; } 	    	
+	    	
+	    	
+	    	/// <summary>
+            /// 
+            /// </summary>	
+	    	public string  AddressLine2  { get; set; } 	    	
+	    	
+	    	
+	    	/// <summary>
+            /// 
+            /// </summary>	
+	    	public string  City  { get; set; } 	    	
+	    	
+	    	
+	    	/// <summary>
+            /// 
+            /// </summary>	
+	    	public string  Company  { get; set; } 	    	
+	    	
+	    	
+	    	/// <summary>
+            /// 
+            /// </summary>	
+	    	public string  Country  { get; set; } 	    	
+	    	
+	    	
+	    	/// <summary>
+            /// 
+            /// </summary>	
+	    	public string  Department  { get; set; } 	    	
+	    	
+	    	
+	    	/// <summary>
             /// The users email address
             /// </summary>	
 	    	public string  Email  { get; set; } 	    	
@@ -29,9 +65,21 @@ namespace ToDo.Views.Model
 	    	
 	    	
 	    	/// <summary>
+            /// 
+            /// </summary>	
+	    	public string  HomeNumber  { get; set; } 	    	
+	    	
+	    	
+	    	/// <summary>
             /// The users mobile number
             /// </summary>	
 	    	public string  MobileNumber  { get; set; } 	    	
+	    	
+	    	
+	    	/// <summary>
+            /// 
+            /// </summary>	
+	    	public string  Postcode  { get; set; } 	    	
 	    	
 	    	
 	    	/// <summary>
@@ -50,6 +98,12 @@ namespace ToDo.Views.Model
             /// Unique identifier for user
             /// </summary>	
 	    	public int  UserId  { get; set; } 	    	
+	    	
+	    	
+	    	/// <summary>
+            /// 
+            /// </summary>	
+	    	public string  WorkNumber  { get; set; } 	    	
     	    	
     	
     	
@@ -57,12 +111,21 @@ namespace ToDo.Views.Model
     	{
     	 var result=new UserView();
     	 
+	    	result.AddressLine1 = item.AddressLine1;     
+	    	result.AddressLine2 = item.AddressLine2;     
+	    	result.City = item.City;     
+	    	result.Company = item.Company;     
+	    	result.Country = item.Country;     
+	    	result.Department = item.Department;     
 	    	result.Email = item.Email;     
 	    	result.FirstName = item.FirstName;     
+	    	result.HomeNumber = item.HomeNumber;     
 	    	result.MobileNumber = item.MobileNumber;     
+	    	result.Postcode = item.Postcode;     
 	    	result.Surname = item.Surname;     
 	    	result.Title = item.Title;     
 	    	result.UserId = item.UserId;     
+	    	result.WorkNumber = item.WorkNumber;     
     	
     	
     	
