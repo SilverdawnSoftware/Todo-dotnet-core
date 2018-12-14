@@ -1,4 +1,4 @@
-// ALLOWOVERWRITE-BAE4EDB3F74518FE79AC4133F23D530A
+// ALLOWOVERWRITE-D51A3DF3B2F91804FA15CF494F509DF9
 
 using System;
 using System.Collections.Generic;
@@ -8,16 +8,16 @@ using System.Linq;
 using System.Threading.Tasks;
 using ToDo.Views.Model;
 using ToDo.Views;
-using ToDoMobile.ViewModels;
+using ToDo.Mobile.ViewModels;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace ToDoMobile.Views.User
+namespace ToDo.Mobile.Views.User
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class UserIndexPage : ContentPage
     {
-        public ObservableCollection<ToDo.Views.Model.UserView> Items { get; set; }=new ObservableCollection<UserView>();
+        public ObservableCollection<UserView> Items { get; set; }=new ObservableCollection<UserView>();
 
         public UserIndexPage()
         {

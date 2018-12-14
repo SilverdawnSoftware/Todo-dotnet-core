@@ -1,17 +1,16 @@
-// ALLOWOVERWRITE-3D02DEEFA970AF6D4623A1CA0361A73F
+// ALLOWOVERWRITE-F28FCA7D4027FDF30BA95EE7F14E8A2B
 
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using ToDoMobile.ViewModels;
-using ToDoMobile.Views.Task;
+using ToDo.Mobile.ViewModels;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace ToDoMobile.Views.Task
+namespace ToDo.Mobile.Views.Task
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class TaskEditPage : ContentPage

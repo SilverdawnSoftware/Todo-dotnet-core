@@ -1,4 +1,4 @@
-// ALLOWOVERWRITE-9474C842C130055BFAEA0D558C5A8B19
+// ALLOWOVERWRITE-AF4660CD07B8C051D900F1066A43D342
 
 using System;
 using System.Collections.Generic;
@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using Silverdawn.Exceptions;
 using ToDo.Transactions.Model;
 using ToDo.Views.Model;
-using data = ToDo.Database;
+using data = ToDo;
 
 namespace ToDo.Transactions
 {
@@ -43,7 +43,7 @@ namespace ToDo.Transactions
          try
             {
             
-               var newUser=new data.User();
+            var newUser=new data.User();
 	    	newUser.AddressLine1 = add.AddressLine1;   	
 	    	newUser.AddressLine2 = add.AddressLine2;   	
 	    	newUser.City = add.City;   	
@@ -138,7 +138,7 @@ userToUpdate.WorkNumber = update.WorkNumber;
 
 
 	// Delete Transaction Code
- 		public async Task Delete(UserDelete delete)
+ 		public async System.Threading.Tasks.Task Delete(UserDelete delete)
         {
         	try
             {
@@ -157,7 +157,7 @@ userToUpdate.WorkNumber = update.WorkNumber;
         } 	
  	
  	
- 	 public async Task Delete(data.ToDoDbContext db, UserDelete delete)
+ 	 public async System.Threading.Tasks.Task Delete(data.ToDoDbContext db, UserDelete delete)
         {
          try
             {

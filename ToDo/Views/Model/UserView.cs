@@ -1,4 +1,4 @@
-// ALLOWOVERWRITE-851E67B226A109C4F0579505047FBB10
+// ALLOWOVERWRITE-831A0719EB184CE9D88CBEA95D8D2501
 
 using System;
 using System.Collections.Generic;
@@ -11,9 +11,6 @@ namespace ToDo.Views.Model
 
     public class UserView
     {
-    
-   
-    
 	    	
 	    	
 	    	/// <summary>
@@ -107,30 +104,30 @@ namespace ToDo.Views.Model
     	    	
     	
     	
-    	public static explicit operator UserView(Database.User item)
-    	{
-    	 var result=new UserView();
-    	 
-	    	result.AddressLine1 = item.AddressLine1;     
-	    	result.AddressLine2 = item.AddressLine2;     
-	    	result.City = item.City;     
-	    	result.Company = item.Company;     
-	    	result.Country = item.Country;     
-	    	result.Department = item.Department;     
-	    	result.Email = item.Email;     
-	    	result.FirstName = item.FirstName;     
-	    	result.HomeNumber = item.HomeNumber;     
-	    	result.MobileNumber = item.MobileNumber;     
-	    	result.Postcode = item.Postcode;     
-	    	result.Surname = item.Surname;     
-	    	result.Title = item.Title;     
-	    	result.UserId = item.UserId;     
-	    	result.WorkNumber = item.WorkNumber;     
+	    	public static explicit operator UserView(User item)
+	    	{
+	    		var result=new UserView();
+	    	 
+		    	result.AddressLine1 = item.AddressLine1;     
+		    	result.AddressLine2 = item.AddressLine2;     
+		    	result.City = item.City;     
+		    	result.Company = item.Company;     
+		    	result.Country = item.Country;     
+		    	result.Department = item.Department;     
+		    	result.Email = item.Email;     
+		    	result.FirstName = item.FirstName;     
+		    	result.HomeNumber = item.HomeNumber;     
+		    	result.MobileNumber = item.MobileNumber;     
+		    	result.Postcode = item.Postcode;     
+		    	result.Surname = item.Surname;     
+		    	result.Title = item.Title;     
+		    	result.UserId = item.UserId;     
+		    	result.WorkNumber = item.WorkNumber;     
+	    	
+	    	
     	
-    	
-    	
-    	return result;
-     }   
+    			return result;
+    	}   
    
     }
 }

@@ -1,4 +1,4 @@
-// ALLOWOVERWRITE-4183B793CB6E8FE29032F13BC273743F
+// ALLOWOVERWRITE-EF55BBAB6CC6B0D13D7F38C937F38FDE
 
 using System;
 using System.Collections.Generic;
@@ -11,9 +11,6 @@ namespace ToDo.Views.Model
 
     public class TaskView
     {
-    
-   
-    
 	    	
 	    	
 	    	/// <summary>
@@ -51,32 +48,32 @@ namespace ToDo.Views.Model
             /// </summary>	
 	    	public int  TaskId  { get; set; } 	    	
     						  
-					   /// <summary>
-                      /// Reference of PrimaryKey for User
-                      /// </summary>
-					  public  int UserUserId { get; set; }   
+			/// <summary>
+	        /// Reference of PrimaryKey for User
+	        /// </summary>
+			public  int UserUserId { get; set; }   
     	
     	
     	
-    	public static explicit operator TaskView(Database.Task item)
-    	{
-    	 var result=new TaskView();
-    	 
-	    	result.CompletedDate = item.CompletedDate;     
-	    	result.DueDate = item.DueDate;     
-	    	result.Name = item.Name;     
-	    	result.StartedDate = item.StartedDate;     
-	    	result.Status = item.Status;     
-	    	result.TaskId = item.TaskId;     
+	    	public static explicit operator TaskView(Task item)
+	    	{
+	    		var result=new TaskView();
+	    	 
+		    	result.CompletedDate = item.CompletedDate;     
+		    	result.DueDate = item.DueDate;     
+		    	result.Name = item.Name;     
+		    	result.StartedDate = item.StartedDate;     
+		    	result.Status = item.Status;     
+		    	result.TaskId = item.TaskId;     
+	    	
+				if (item.User != null) 
+				{   
+			    	result.UserUserId=item.User.UserId;
+			    } 
+	    	
     	
-if (item.User != null) 
-			    			{   
-		    		   result.UserUserId=item.User.UserId;
-		    		   } 
-    	
-    	
-    	return result;
-     }   
+    			return result;
+    	}   
    
     }
 }

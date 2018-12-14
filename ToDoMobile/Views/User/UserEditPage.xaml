@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:viewModels="clr-namespace:ToDoMobile.ViewModels;assembly=ToDoMobile"
-             x:Class="ToDoMobile.Views.User.UserEditPage" Title="User List">
+             xmlns:viewModels="clr-namespace:ToDo.Mobile.ViewModels"
+             x:Class="ToDo.Mobile.Views.User.UserEditPage" Title="User List">
     <ContentPage.BindingContext>
         <viewModels:UserEditViewModel/>
     </ContentPage.BindingContext>
@@ -130,4 +130,4 @@
       
     </ContentPage.Content>
 </ContentPage>
-<!-- ALLOWOVERWRITE-117B0BE88BB06C9DB18F5681C1D5D936 -->
+<!-- ALLOWOVERWRITE-1568115B10B49DA6DAAC4367A3C172D0 -->

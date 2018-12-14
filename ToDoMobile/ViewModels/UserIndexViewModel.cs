@@ -1,4 +1,4 @@
-// ALLOWOVERWRITE-BC2A7E8C18273AAE90738D99D9F4086A
+// ALLOWOVERWRITE-F035019B56931CCD41B6305FAA4884C8
 
 using System;
 using System.Collections.Generic;
@@ -10,11 +10,11 @@ using System.Threading.Tasks;
 using System.Windows.Input;
 using ToDo.Views;
 using ToDo.Views.Model;
-using ToDoMobile.Annotations;
-using ToDoMobile.Views.User;
+using ToDo.Mobile.Annotations;
+
 using Xamarin.Forms;
 
-namespace ToDoMobile.ViewModels
+namespace ToDo.Mobile.ViewModels
 {
     public class UserIndexViewModel : INotifyPropertyChanged
     {

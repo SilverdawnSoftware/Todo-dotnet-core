@@ -1,4 +1,4 @@
-// ALLOWOVERWRITE-AF4DDDB07FFD3779434149292865C49E
+// ALLOWOVERWRITE-C900BD6B77C3EE856EA6316A9770500B
 
 using System;
 using System.Collections.Generic;
@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using Silverdawn.Exceptions;
 using ToDo.Transactions.Model;
 using ToDo.Views.Model;
-using data = ToDo.Database;
+using data = ToDo;
 
 namespace ToDo.Transactions
 {
@@ -43,7 +43,7 @@ namespace ToDo.Transactions
          try
             {
             
-               var newTask=new data.Task();
+            var newTask=new data.Task();
 	    	newTask.CompletedDate = add.CompletedDate;   	
 	    	newTask.DueDate = add.DueDate;   	
 	    	newTask.Name = add.Name;   	
@@ -123,7 +123,7 @@ taskToUpdate.TaskId = update.TaskId;
 
 
 	// Delete Transaction Code
- 		public async Task Delete(TaskDelete delete)
+ 		public async System.Threading.Tasks.Task Delete(TaskDelete delete)
         {
         	try
             {
@@ -142,7 +142,7 @@ taskToUpdate.TaskId = update.TaskId;
         } 	
  	
  	
- 	 public async Task Delete(data.ToDoDbContext db, TaskDelete delete)
+ 	 public async System.Threading.Tasks.Task Delete(data.ToDoDbContext db, TaskDelete delete)
         {
          try
             {
