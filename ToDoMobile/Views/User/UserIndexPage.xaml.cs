@@ -1,4 +1,4 @@
-// ALLOWOVERWRITE-D51A3DF3B2F91804FA15CF494F509DF9
+// ALLOWOVERWRITE-A4DBC903F16593C5E61C3F2F799E361A
 
 using System;
 using System.Collections.Generic;
@@ -6,13 +6,13 @@ using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Linq;
 using System.Threading.Tasks;
-using ToDo.Views.Model;
-using ToDo.Views;
-using ToDo.Mobile.ViewModels;
+using Database.Views.Model;
+using Database.Views;
+using Database.Mobile.ViewModels;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace ToDo.Mobile.Views.User
+namespace Database.Mobile.Views.User
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class UserIndexPage : ContentPage

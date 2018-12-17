@@ -1,4 +1,4 @@
-// ALLOWOVERWRITE-B7B3E0AB22471397ECC6578D0ACFF489
+// ALLOWOVERWRITE-E283DBB70431D4C4DC4B8F3E039D7BC7
 
 using System;
 using System.Collections.Generic;
@@ -6,7 +6,7 @@ using System.Linq;
 
 
 
-namespace ToDo.Transactions.Model
+namespace ToDo.Database.Transactions.Model
 {
     public class TaskAdd
     {

@@ -1,4 +1,4 @@
-// ALLOWOVERWRITE-BC81DE5A4707B8C64D6077AE97CD1D06
+// ALLOWOVERWRITE-C3EEB3F3B6574D56702D4771E9E706C1
 
 using System;
 using System.Collections.Generic;
@@ -6,7 +6,7 @@ using System.Linq;
 using System.Runtime.Serialization;
 
 
-namespace ToDo.Transactions.Model
+namespace Database.Transactions.Model
 {
 	[DataContract]
     public class TaskUpdate

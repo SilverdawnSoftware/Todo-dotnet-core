@@ -1,4 +1,4 @@
-// ALLOWOVERWRITE-EF55BBAB6CC6B0D13D7F38C937F38FDE
+// ALLOWOVERWRITE-6A41ACB4DC5B9BDB1CEB30C0F9A5CB58
 
 using System;
 using System.Collections.Generic;
@@ -6,7 +6,7 @@ using System.Linq;
 
 
 
-namespace ToDo.Views.Model
+namespace ToDo.Database.Views.Model
 {
 
     public class TaskView

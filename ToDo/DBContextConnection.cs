@@ -5,7 +5,7 @@ using System.Text;
 using Microsoft.EntityFrameworkCore;
 
 
-namespace ToDo
+namespace ToDo.Database
 {
     public partial class ToDoDbContext : DbContext
     {

@@ -5,12 +5,12 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using ToDo;
+using ToDo.Database;
 
-namespace ToDo.Migrations
+namespace ToDo.Database.Migrations
 {
     [DbContext(typeof(ToDoDbContext))]
-    [Migration("20181214111658_first")]
+    [Migration("20181217104832_first")]
     partial class first
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -21,7 +21,7 @@ namespace ToDo.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("ToDo.Task", b =>
+            modelBuilder.Entity("ToDo.Database.Task", b =>
                 {
                     b.Property<int>("TaskId")
                         .ValueGeneratedOnAdd()
@@ -46,7 +46,7 @@ namespace ToDo.Migrations
                     b.ToTable("Tasks");
                 });
 
-            modelBuilder.Entity("ToDo.User", b =>
+            modelBuilder.Entity("ToDo.Database.User", b =>
                 {
                     b.Property<int>("UserId")
                         .ValueGeneratedOnAdd()
@@ -85,9 +85,9 @@ namespace ToDo.Migrations
                     b.ToTable("Users");
                 });
 
-            modelBuilder.Entity("ToDo.Task", b =>
+            modelBuilder.Entity("ToDo.Database.Task", b =>
                 {
-                    b.HasOne("ToDo.User", "User")
+                    b.HasOne("ToDo.Database.User", "User")
                         .WithMany("Tasks")
                         .HasForeignKey("UserId");
                 });

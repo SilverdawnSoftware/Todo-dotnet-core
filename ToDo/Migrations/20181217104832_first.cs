@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace ToDo.Migrations
+namespace ToDo.Database.Migrations
 {
     public partial class first : Migration
     {

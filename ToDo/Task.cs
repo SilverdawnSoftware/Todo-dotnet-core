@@ -1,4 +1,4 @@
-// ALLOWOVERWRITE-A1A54318434B58DE35A20893F93753EA
+// ALLOWOVERWRITE-86C4BF48F7D023E07C6857EE79184BF1
 
 using System;
 using System.Collections.Generic;
@@ -6,7 +6,7 @@ using System.Linq;
 
 
 
-namespace ToDo
+namespace ToDo.Database
 {
     public class Task 
     {

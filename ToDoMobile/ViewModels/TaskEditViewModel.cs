@@ -1,19 +1,19 @@
-// ALLOWOVERWRITE-19AEA1B3516F7276D122E0FAF0FE3DA7
+// ALLOWOVERWRITE-902B3E3BE141E3BAA260C9DE8D6AF4E8
 
 using System;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
 using System.Windows.Input;
-using ToDo.Transactions;
-using ToDo.Transactions.Model;
-using ToDo.Views;
-using ToDo.Views.Model;
-using ToDo.Mobile.Annotations;
+using Database.Transactions;
+using Database.Transactions.Model;
+using Database.Views;
+using Database.Views.Model;
+using Database.Mobile.Annotations;
 
 using Xamarin.Forms;
 
-namespace ToDo.Mobile.ViewModels
+namespace Database.Mobile.ViewModels
 {
 
     public class TaskEditViewModel : INotifyPropertyChanged

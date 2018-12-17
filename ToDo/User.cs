@@ -1,4 +1,4 @@
-// ALLOWOVERWRITE-A596545CB1F65421B7FD88595BE3C5CF
+// ALLOWOVERWRITE-FA349C232DC89345C84E4A6BA1821546
 
 using System;
 using System.Collections.Generic;
@@ -6,7 +6,7 @@ using System.Linq;
 
 
 
-namespace ToDo
+namespace ToDo.Database
 {
     public class User 
     {

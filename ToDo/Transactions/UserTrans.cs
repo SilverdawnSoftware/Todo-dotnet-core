@@ -1,4 +1,4 @@
-// ALLOWOVERWRITE-AF4660CD07B8C051D900F1066A43D342
+// ALLOWOVERWRITE-026849D8B170EBDBB6F4704AB1B8A0D0
 
 using System;
 using System.Collections.Generic;
@@ -7,11 +7,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Silverdawn.Exceptions;
-using ToDo.Transactions.Model;
-using ToDo.Views.Model;
-using data = ToDo;
+using ToDo.Database.Transactions.Model;
+using ToDo.Database.Views.Model;
+using data = ToDo.Database;
 
-namespace ToDo.Transactions
+namespace ToDo.Database.Transactions
 {
  public partial class UserTransactions
  {

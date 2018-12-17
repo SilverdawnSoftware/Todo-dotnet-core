@@ -1,17 +1,17 @@
-// ALLOWOVERWRITE-27D552BE4CE4BD7F4B799475F0F33FC6
+// ALLOWOVERWRITE-AE1A6613C65B48E05A89DE7A1D96D52F
 
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using ToDo.Mobile.ViewModels;
-using ToDo.Mobile.Views.Task;
+using Database.Mobile.ViewModels;
+using Database.Mobile.Views.Task;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace ToDo.Mobile.Views.User
+namespace Database.Mobile.Views.User
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class UserEditPage : ContentPage

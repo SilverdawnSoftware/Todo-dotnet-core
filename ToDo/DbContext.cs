@@ -1,11 +1,11 @@
-// ALLOWOVERWRITE-8D338F84B23A3685A4F69AF40819D4C2
+// ALLOWOVERWRITE-51B08CFD3C06FE15436FAC1780E2CB0C
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using Microsoft.EntityFrameworkCore;
 
 
-namespace ToDo
+namespace ToDo.Database
 {
     public partial class ToDoDbContext : DbContext
     {

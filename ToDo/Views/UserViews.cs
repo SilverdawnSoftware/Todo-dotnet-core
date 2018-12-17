@@ -1,4 +1,4 @@
-// ALLOWOVERWRITE-637106EE010EB95639962D211A05AF6E
+// ALLOWOVERWRITE-6922829AEE1E212AC081BCB725228C23
 
 using System;
 using System.Collections.Generic;
@@ -6,10 +6,10 @@ using Microsoft.EntityFrameworkCore;
 using System.Linq;
 using System.Threading.Tasks;
 using Silverdawn.Exceptions;
-using ToDo.Views.Model;
-using ToDo;
+using ToDo.Database.Views.Model;
 
-namespace ToDo.Views
+
+namespace ToDo.Database.Views
 {
     public partial class UserViews
     {

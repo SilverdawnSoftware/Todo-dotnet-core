@@ -59,7 +59,7 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "ToDoDocumentation", "ToDoDo
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Silverdawn.Exceptions", "Silverdawn.Exceptions\Silverdawn.Exceptions.csproj", "{F78646D4-74DB-4934-A73E-1F68B9514451}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ToDo", "ToDo\ToDo.csproj", "{75050C75-F040-4F68-BD1D-CA61C30F9042}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ToDo.Database", "ToDo\ToDo.Database.csproj", "{75050C75-F040-4F68-BD1D-CA61C30F9042}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
