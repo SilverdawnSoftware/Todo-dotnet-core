@@ -1,4 +1,4 @@
-// ALLOWOVERWRITE-6B9DBECF8BD5DE5EDC0100270219367B
+// ALLOWOVERWRITE-709454D3830D1C48D899D998E40833A9
 
 using System;
 using System.Collections.Generic;
@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Silverdawn.Exceptions;
+using SilverdawnSoftware.Exceptions;
 using ToDo.Database.Transactions.Model;
 using ToDo.Database.Views.Model;
 using data = ToDo.Database;
@@ -73,7 +73,7 @@ namespace ToDo.Database.Transactions
 
 // Update Transaction Code
  		public async Task<TaskView> Update(TaskUpdate update)
-        {
+        {	
         	try
             {
 	            using (var db = new data.ToDoDbContext())
@@ -89,7 +89,7 @@ namespace ToDo.Database.Transactions
                 return null;
               
             } 
-        } 	
+        } 			
  	
  	
  	 public async Task<data.Task> Update(data.ToDoDbContext db, TaskUpdate update)
