@@ -23,6 +23,7 @@
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="1.0.1" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\SilverdawnSoftware.Exceptions\SilverdawnSoftware.Exceptions.csproj" />
     <ProjectReference Include="..\ToDo\ToDo.Database.csproj" />
   </ItemGroup>
 
